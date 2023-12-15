@@ -9,8 +9,12 @@ export interface MatrixEntry<T> extends Coords {
   value: T;
 }
 
+export function readString(name: string): string {
+  return fs.readFileSync(name, { encoding: 'utf8' });
+}
+
 export function readLines(name: string): Array<string> {
-  return fs.readFileSync(name, { encoding: 'utf8' }).split('\r\n');
+  return readString(name).split('\r\n');
 }
 
 export function parseNumbersFromLine(str: string): number[] {
