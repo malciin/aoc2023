@@ -34,3 +34,7 @@ export function getMatrixEntries<T>(matrix: T[][]): Array<MatrixEntry<T>> {
 export function sum(numbers: Iterable<number>): number {
   return [...numbers].reduce((acc, v) => acc + v, 0);
 }
+
+export function lastElement<T>(arr: ReadonlyArray<T>): T {
+  return arr[arr.length - 1];
+}
