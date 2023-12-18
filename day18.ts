@@ -56,3 +56,4 @@ function getOuterGridSpanningPoints(points: Vec2[]): Vec2[] {
 
 console.log(Math.floor(trapezoidShoelace(getOuterGridSpanningPoints(digPositionsPart1))));
 console.log(Math.floor(trapezoidShoelace(getOuterGridSpanningPoints(digPositionsPart2))));
+// check day18_cleaner_part2 for formula using perimeter that computes valid result without getOuterGridSpanningPoints func
